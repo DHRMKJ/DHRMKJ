@@ -7,19 +7,17 @@ import X from "../components/svgs/Twitter.astro";
 import Mail from "../components/svgs/Mail.astro";
 ---
 
-<Layout title="Hello Meine fruende!">
+<Layout title="Hallo mein Freund!">
   <section contain-layout un-flex="~ col gap-7.5">
     <div
-      class="max-w-fit p-7 mx-auto text-monitor-text font-monitor flex items-center justify-center"
+      class="max-w-fit p-7 pt-14 mx-auto text-monitor-text font-monitor flex items-center justify-center"
     >
       <div class="max-w-3xl mx-auto">
         <h1 class="text-3xl font-bold mb-4 underline">About Me</h1>
-        <h2 class="text-2xl font-semibold">
-          Dharmik Jadav - Software Engineer
-        </h2>
+        <!-- <h2 class="text-2xl font-semibold">DHRMKJ</h2> -->
         <div class="flex flex-col mb-3">
           <p class="">
-            I am Dharmik Jadav, a software engineer with a background in IT.
+            I am Dharmik Jadav, a software engineer with a background in IT,
           </p>
           <p>I'm very passionate for building products.</p>
         </div>
@@ -49,7 +47,7 @@ import Mail from "../components/svgs/Mail.astro";
         </div>
         <div class="my-10">
           <h2 class="mb-2 italic">currently working on...</h2>
-          <div un-flex="~ col gap-1 items-start">
+          <!-- <div un-flex="~ col gap-1 items-start">
             <div class="flex flex-col">
               <h3 class="post-title!">
                 <a
@@ -75,6 +73,20 @@ import Mail from "../components/svgs/Mail.astro";
               > on developing a software portal that enables b2b businesses to generate
               e-invoices efficiently.
             </p>
+          </div> -->
+          <div un-flex="~ col gap-1 items-start">
+            <div class="flex flex-col">
+              <h3 class="post-title!">
+                <a href={"#"} class="underline text-xl" target="_blank"
+                  ><b>SCBT</b></a
+                >
+              </h3>
+              <div class="mb-2 text-3.5">
+                <span><b>{"Posted At - "}</b></span>
+                <time class="italic">{new Date("July 1, 2024 03:24:00")}</time>
+              </div>
+            </div>
+            <p class="leading-6">a secure computer based test software</p>
           </div>
         </div>
         <div>
