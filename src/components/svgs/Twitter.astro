@@ -1,4 +1,6 @@
 ---
+import { SVG_COLOR } from "./svgColor";
+
 const { height, width } = Astro.props;
 ---
 
@@ -10,7 +12,7 @@ const { height, width } = Astro.props;
     version="1.1"
     viewBox="0 0 512 512"
     width={width}
-    fill="#fff"
+    fill={SVG_COLOR}
     xml:space="preserve"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
