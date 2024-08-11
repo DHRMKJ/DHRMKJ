@@ -1,10 +1,10 @@
 ---
 import { SVG_COLOR } from "./svgColor";
 
-const { height, width } = Astro.props;
+const { height, width, link } = Astro.props;
 ---
 
-<span class="">
+<a href={link}>
   <!--?xml version="1.0" ?-->
   <svg
     height={height}
@@ -31,4 +31,4 @@ const { height, width } = Astro.props;
       ></g
     ></svg
   >
-</span>
+</a>

@@ -1,10 +1,10 @@
 ---
 import { SVG_COLOR } from "./svgColor";
 
-const { height, width } = Astro.props;
+const { height, width, link } = Astro.props;
 ---
 
-<span>
+<a href={link}>
   <!--?xml version="1.0" encoding="utf-8"?-->
   <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
   <svg
@@ -35,4 +35,4 @@ const { height, width } = Astro.props;
       ></path>
     </g>
   </svg>
-</span>
+</a>

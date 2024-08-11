@@ -1,0 +1,71 @@
+---
+import Github from "./svgs/Github.astro";
+import Discord from "./svgs/Discord.astro";
+import Mail from "./svgs/Mail.astro";
+import Insta from "./svgs/Insta.astro";
+import Linkedin from "./svgs/Linkedin.astro";
+
+const SVG_DIMENSIONS = 18;
+
+const links = {
+  github: "https://github.com/dhrmkj",
+  linkedin: "https://linkedin.com/in/dhrmkj",
+  discord: "https://discord.com/users/1103331985239322635",
+  mail: "mailto:dhrmkjdv@gmail.com",
+  insta: "https://instagram.com/dhrmkj",
+};
+---
+
+<div class="flex flex-col-reverse sm:flex-row w-full h-fit">
+  <div
+    class="flex flex-col w-full items-center sm:items-start sm:w-1/2 my-auto"
+  >
+    <h2 class="tracking-widest text-slate-600 text-lg font-semibold">
+      Dharmik Jadav
+    </h2>
+    <div class="flex flex-col">
+      <div class="flex items-center text-lg gap-4">
+        <!-- <Mail
+          height={SVG_DIMENSIONS}
+          width={SVG_DIMENSIONS}
+          link={links.mail}
+        /> -->
+        <div class="flex items-center gap-2">
+          <span class="text-sky-800 tracking-widest">dhrmkjdv@gmail.com</span>
+        </div>
+      </div>
+      <div class="flex gap-4 items-center py-3">
+        <Github
+          height={SVG_DIMENSIONS}
+          width={SVG_DIMENSIONS}
+          link={links.github}
+        />
+        <span>/</span>
+        <Linkedin
+          height={SVG_DIMENSIONS}
+          width={SVG_DIMENSIONS}
+          link={links.linkedin}
+        />
+        <span>/</span>
+
+        <Discord
+          height={SVG_DIMENSIONS}
+          width={SVG_DIMENSIONS}
+          link={links.discord}
+        />
+        <span>/</span>
+
+        <Insta
+          height={SVG_DIMENSIONS}
+          width={SVG_DIMENSIONS}
+          link={links.insta}
+        />
+      </div>
+    </div>
+  </div>
+  <div class="w-full sm:w-1/2 flex items-center justify-center sm:justify-end">
+    <div class="my-8 max-w-80 border border-slate-400 rounded-md">
+      <img class="p-2" src="/dharmik.jpg" />
+    </div>
+  </div>
+</div>

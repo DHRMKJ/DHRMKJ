@@ -1,10 +1,10 @@
 ---
 import { SVG_COLOR } from "./svgColor";
 
-const { height, width } = Astro.props;
+const { height, width, link } = Astro.props;
 ---
 
-<span class="">
+<a href={link}>
   <svg
     enable-background="new 0 0 32 32"
     height={height}
@@ -21,4 +21,4 @@ const { height, width } = Astro.props;
       fill={SVG_COLOR}
       fill-rule="evenodd"></path><g></g><g></g><g></g><g></g><g></g><g></g></svg
   >
-</span>
+</a>
