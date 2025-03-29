@@ -1,1 +1,1 @@
-export const SVG_COLOR = "#0c4a6e"; //"#FF5733";
+export const SVG_COLOR = "#0369A1"; //"#FF5733";
